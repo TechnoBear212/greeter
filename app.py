@@ -1,3 +1,4 @@
+from datetime import date
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 NAME = "Abdul Rahman"
@@ -11,6 +12,7 @@ class Greeter(BaseHTTPRequestHandler):
 <html>
   <body style="font-family: sans-serif; text-align: center; margin-top: 80px;">
     <h1>{GREETING}, {NAME}!</h1>
+    <p>Today is {date.today():%A, %d %B %Y}.</p>
   </body>
 </html>"""
         self.send_response(200)
