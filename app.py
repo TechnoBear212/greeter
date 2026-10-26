@@ -2,7 +2,7 @@ from datetime import date
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 NAME = "Abdul Rahman"
-GREETING = "Hello"
+GREETING = "Salam"
 PORT = 8080
 
 
